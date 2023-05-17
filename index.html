@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Pracice 3 JS</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container mt-5 mb-5" style="background-color: rgba(152, 228, 232, 0.814); box-shadow: 5px;">
+    <div class="container mx-auto pt-4" style="width: 400px;">
+      <form class="form-inline">
+        <div class="form-group mx-sm-3 mb-2">
+          <input type="number" class="form-control" id="inputNum" placeholder="Nhập số n">
+        </div>
+        <button type="button" class="btn btn-primary mb-2 pl-4 pr-4" style="border-radius: 30px;">Thêm Số</button>
+      </form>
+      <div class="alert alert-danger mt-3" role="alert" id="txtNotify1">
+        <i class="fa-solid fa-share"></i>
+      </div>
+    </div>
+
+    <div class="card-body" style="border: 5px inline gray;">
+      <div class="card1 pt-3">
+        <button type="button" class="btn btn-primary ml-5" style="border-radius: 10px;" id="btncalc2">1. Tính tổng số
+          dương
+        </button>
+        
+        <div class="alert alert-danger mt-3 ml-5 " style="width: 950px;;" role="alert" id="txtNotify2">
+          <i class="fa-solid fa-share"></i>
+        </div>
+      </div>
+
+      <div class="card2 pt-3">
+        <button type="button" class="btn btn-primary ml-5" style="border-radius: 10px;" id="btncalc2">2. Đếm số dương
+        </button>
+        <div class="alert alert-danger mt-3 ml-5 " style="width: 950px;;" role="alert" id="txtNotify2">
+          <i class="fa-solid fa-share"></i>
+        </div>
+      </div>
+
+      <div class="card3 pt-3">
+        <button type="button" class="btn btn-primary ml-5" style="border-radius: 10px;" id="btncalc2">3. Tìm số nhỏ nhất
+        </button>
+        </form>
+        <div class="alert alert-danger mt-3 ml-5 " style="width: 950px;;" role="alert" id="txtNotify2">
+          <i class="fa-solid fa-share"></i>
+        </div>
+      </div>
+
+      <div class="card4 pt-3">
+        <button type="button" class="btn btn-primary ml-5" style="border-radius: 10px;" id="btncalc2">4. Tìm số dương
+          nhỏ nhất
+        </button>
+        <div class="alert alert-danger mt-3 ml-5 " style="width: 950px;;" role="alert" id="txtNotify2">
+          <i class="fa-solid fa-share"></i>
+        </div>
+      </div>
+
+      <div class="card5 pt-3">
+        <button type="button" class="btn btn-primary ml-5" style="border-radius: 10px;" id="btncalc2">5. Tìm số chẵn cuối cùng
+        </button>
+        <div class="alert alert-danger mt-3 ml-5 " style="width: 950px;;" role="alert" id="txtNotify2">
+          <i class="fa-solid fa-share"></i>
+        </div>
+      </div>
+
+      <div class="card6 pt-3">
+        <button type="button" class="btn btn-primary ml-5" style="border-radius: 10px;" id="btncalc2">6. Đổi chỗ </button>
+      
+        <div class="alert alert-danger mt-3 ml-5 " style="width: 950px;;" role="alert" id="txtNotify2">
+          <i class="fa-solid fa-share"></i>
+        </div>
+      </div>
+
+      <div class="card7 pt-3">
+        <button type="button" class="btn btn-primary ml-5" style="border-radius: 10px;" id="btncalc2">7. Sắp xếp tăng dần
+        </button>
+        <div class="alert alert-danger mt-3 ml-5 " style="width: 950px;;" role="alert" id="txtNotify2">
+          <i class="fa-solid fa-share"></i>
+        </div>
+      </div>
+
+      <div class="card8 pt-3">
+        <button type="button" class="btn btn-primary ml-5" style="border-radius: 10px;" id="btncalc2">8. Tìm số nguyên tố đầu tiên
+        </button>
+        </form>
+        <div class="alert alert-danger mt-3 ml-5 " style="width: 950px;;" role="alert" id="txtNotify2">
+          <i class="fa-solid fa-share"></i>
+        </div>
+      </div>
+
+      <div class="card9 pt-3">
+        <button type="button" class="btn btn-primary ml-5" style="border-radius: 10px;" id="btncalc2">9. Đếm số nguyên
+        </button>
+        </form>
+        <div class="alert alert-danger mt-3 ml-5 " style="width: 950px;;" role="alert" id="txtNotify2">
+          <i class="fa-solid fa-share"></i>
+        </div>
+      </div>
+
+      <div class="card10 pt-3">
+        <button type="button" class="btn btn-primary ml-5" style="border-radius: 10px;" id="btncalc2">10. So sánh số lượng số âm và dương
+        </button>
+        </form>
+        <div class="alert alert-danger mt-3 ml-5 " style="width: 950px;;" role="alert" id="txtNotify2">
+          <i class="fa-solid fa-share"></i>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+  <script src="./JS/main.js"></script>
+</body>
+
+</html>

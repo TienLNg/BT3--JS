@@ -44,8 +44,8 @@ function timMin() {
     } else {
         var minDuong = arrSoDuong[0];
         for (var i = 0; i < arrSoDuong.length; i++) {
-            if (arrSoDuong[i]< minDuong) {
-                minDuong = arrSoDuong[i];
+            if ( arrSoDuong[i] > 0 && arrSoDuong[i] < minDuong) {
+                minDuong = arrSoDuong[i]; 
             }
             
         }

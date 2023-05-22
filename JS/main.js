@@ -35,17 +35,26 @@ document.getElementById("btncalc2").onclick = sumSoDuong;
 
 //tìm số dương nhỏ nhất
 var arrSoDuong = [];
-for (let i = 0; i < arrSoDuong.length; i++) {
-    if (arrSoDuong[i] > 0) {
-        arrSoDuong.push(arrSoDuong[i]);
-    }
-    
-}
+
 function timMin() {
-    if (arrSoDuong) {
-        
+    
+    if (arrSoDuong == 0 ) {
+        document.getElementById("txtNotify5").innerHTML = "Mảng không có số dương."
+    
+    } else {
+        var minDuong = arrSoDuong[0];
+        for (var i = 0; i < arrSoDuong.length; i++) {
+            if (arrSoDuong[i]< minDuong) {
+                minDuong = arrSoDuong[i];
+            }
+            
+        }
+        document.getElementById("txtNotify5").innerHTML = "Số dương nhỏ nhất = " + minDuong;
+
     }
 }
+document.getElementById("btncalc5").onclick = timMin;
+
 //tìm số chẵn cuối cùng 
 
 

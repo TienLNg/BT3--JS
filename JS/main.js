@@ -82,17 +82,19 @@ document.getElementById("btncalc5").onclick = timMinDuong;
 
 //sắp xếp tăng dần
 function xepTang() {
-    var max = arrList[i];
+    var Num = [];
     for (var i = 0; i < arrList.length; i++) {
-        
-        arrList.sort((a, b) => a - b);
+        Num.push(arrList[i])
+
     }
-
-    document.getElementById("txtNotify8").innerHTML = "Mảng sau khi sắp xếp =  " +  + ".";
-    // return countt;
-
+    var result = arrList.sort(function (a, b) {
+        return a - b;
+    });
+    document.getElementById("txtNotify8").innerHTML = "Mảng sau khi sắp xếp =  " + result + ".";
 }
 document.getElementById("btncalc8").onclick = xepTang;
+
+
 
 //tìm số nguyên tố đầu tiên
 
@@ -101,9 +103,9 @@ document.getElementById("btncalc8").onclick = xepTang;
 function countNumbers() {
     var count = 0;
     for (var i = 0; i < arrList.length; i++) {
-        
-            count++;
-        
+
+        count++;
+
     }
     document.getElementById("txtNotify10").innerHTML = "Số nguyên =  " + count + ".";
 }

@@ -78,6 +78,18 @@ document.getElementById("btncalc5").onclick = timMinDuong;
 
 
 //đổi chỗ
+function doiCho() {
+    var temp = arrList(i);
+    arrList.splice()
+
+
+    
+    document.getElementById("txtNotify7").innerHTML = "Mảng sau khi đổi =  " + count + ".";
+    return count;
+
+}
+document.getElementById("btncalc7").onclick = doiCho;
+
 
 
 //sắp xếp tăng dần
